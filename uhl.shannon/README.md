@@ -1,3 +1,3 @@
 # Shannon Uhl
 
-- //shannonuhl.com
+- http://shannonuhl.com
