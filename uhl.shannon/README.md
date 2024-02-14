@@ -1,3 +1,3 @@
 # Shannon Uhl
 
-- http://shannonuhl.com
+-http://shannonuhl.com/wmn608/uhl.shannon/
