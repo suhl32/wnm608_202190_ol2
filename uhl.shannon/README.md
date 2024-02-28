@@ -1,6 +1,6 @@
 # Shannon Uhl
 
 
--http://shannonuhl.com/index.html
+-http://shannonuhl.com/wmn608/uhl.shannon
 
 
