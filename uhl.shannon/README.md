@@ -1,6 +1,6 @@
 # Shannon Uhl
 
 
--http://shannonuhl.com
+-http://shannonuhl.com/index.html
 
 
