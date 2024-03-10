@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dog & Co.</title>	
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="lib/css/gridsystem.css">
+	<link rel="stylesheet" href="lib/css/styleguide.css">
+	<link rel="stylesheet" href="css/storetheme.css">
+
+</head>
+<body>
+	
+	<!-- header.h1+p -->
+	<header class="navbar">
+		<div class="container2 display-flex">
+			<div class="flex-none">
+				<h1>Dog & Co.</h1>	
+			</div>	
+			<div class="flex-stretch"></div>
+			<nav class="flex-none nav">
+				<ul class="container display-flex">
+					<li><a href="#article1">Food</a></Li>
+					<li><a href="#article2">Toys</a></Li>
+					<li><a href="#article3">Health</a></Li>
+					<li><a href="#article4">Accessories</a></Li>
+					<li><a>Account</a></li>
+					<li><a>Cart</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="hero" style="background-image:url('img/dogfood.jpg')">
+			<div class="hero-text">
+				<h1>Valentine's Day Sale</h1>
+				<button>See Deals</button>
+			</div>
+		</div>	
+	</header>
+
+    <div class="container">
+    	<div class="card soft">
+    		<h2>Grid</h2>
+			<div class="grid">
+				<div class="col-xs-6">column 6</div>
+				<div class="col-xs-6">column 6</div>
+			</div>
+			<div class="grid gap xs-small md-medium">
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+				<div class="col-xs-4">column 4</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-6">column 6</div>
+				<div class="col-xs-3">column 3</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="card soft">
+    		<h2>Responsive Grid</h2>
+			<div class="grid">
+				<div class="col-xs-12 col-md-6">column 6</div>
+				<div class="col-xs-12 col-md-6">column 6</div>
+			</div>
+			<div class="grid">
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-6">column4</div>
+				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+				<div class="col-xs-3">column 3</div>
+			</div>
+
+			<div class="grid ten gap">
+
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+				<div class="col-xs-2">column 2</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="grid gap xs-small md-medium">
+			<!-- .col-xs-6.col-md-3*4>.card>{Card} -->	
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='img/food.jpg' class="media-image"></div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='img/ball.jpg' class="media-image"></div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='img/med.jpg' class="media-image"></div>
+			</div>
+			<div class="col-xs-6 col-md-3" class="media-image">
+				<div class="card soft">
+					<img src='img/collar.jpg'></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*3>lorem40 -->
+	
+	<div class="container">
+		<article id="article1" class="article card soft">
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+					<h2><a href="https://www.eatingwell.com/article/7966417/healthiest-ingredients-to-look-for-in-pet-food/">The 6 Healthiest Ingredients to look for in Pet Food</a></h2>
+				</div>
+				<div class="flex-none">
+					<small>Shop Food</small>
+				</div>
+
+			</div>
+			 <div class="article-body">
+	 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quod earum facilis consequuntur vero, cumque quidem natus deserunt nemo obcaecati tempore tenetur explicabo molestias praesentium vel cum quas, atque. Optio ea nulla quidem voluptatem, nisi asperiores aperiam rem doloribus. Placeat.</p>
+	 			<p>Blanditiis quae perferendis facere pariatur nam officiis, possimus maiores ullam sapiente dolores consequatur aliquid, dolorem, impedit fuga, magnam quos. Ducimus recusandae dolor totam, incidunt molestias, nemo vitae rerum nam explicabo atque non est hic iusto assumenda debitis, a, esse exercitationem.</p>
+			 </div> 
+		</article>
+	<article id="article2" class="article card hard">
+		<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+			<h2><a href="https://be.chewy.com/pet-parenting-pet-lovers-6-dog-toy-dangers-you-should-know/">6 Dog Toy Dangers You Should Know</a></h2>
+			</div>
+				<div class="flex-none">
+					<small>Shop Toys</small>
+				</div>
+			</div>
+			<div class="article-body">
+	 	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quod earum facilis consequuntur vero, cumque quidem natus deserunt nemo obcaecati tempore tenetur explicabo molestias praesentium vel cum quas, atque. Optio ea nulla quidem voluptatem, nisi asperiores aperiam rem doloribus. Placeat.</p>
+	 		</div> 
+	</article>
+<div class="view-window" style="background-image:url('img/puppies.jpg')">
+	
+</div>
+	<article id="article3" class="article card soft">
+		<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+			<h2><a href="https://www.akc.org/expert-advice/health/does-cbd-work-for-dogs/>Does CBD Work for Dogs?">Does CBD Work for Dogs?</a></h2>
+			</div>
+				<div class="flex-none">
+					<small>Shop Health</small>
+				</div>
+			</div>
+			<div class="article-body">
+	 	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quod earum facilis consequuntur vero, cumque quidem natus deserunt nemo obcaecati tempore tenetur explicabo molestias praesentium vel cum quas, atque. Optio ea nulla quidem voluptatem, nisi asperiores aperiam rem doloribus. Placeat.</p>
+	 	<p>Blanditiis quae perferendis facere pariatur nam officiis, possimus maiores ullam sapiente dolores consequatur aliquid, dolorem, impedit fuga, magnam quos. Ducimus recusandae dolor totam, incidunt molestias, nemo vitae rerum nam explicabo atque non est hic iusto assumenda debitis, a, esse exercitationem.</p>
+	 	<p>Suscipit sunt dolorum cum alias consectetur quae placeat animi quia similique necessitatibus nemo, iure aperiam unde. Quod nesciunt labore inventore esse nam tenetur, voluptatum hic in aspernatur repudiandae beatae, dolor odit numquam doloribus at, eveniet iste tempore ratione distinctio, iusto!</p>
+	 		</div> 
+	 	</article>
+	</article>
+	<article id="article4" class="article card hard">
+		<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+			<h2><a href="https://www.youtube.com/watch?v=SBB80Np15Lc">Dangers of Retractable Leashes</a></h2>
+			</div>
+				<div class="flex-none">
+					<small>Shop Accessories</small>
+				</div>
+			</div>
+		<div class="article-body">
+	 	<p>Blanditiis quae perferendis facere pariatur nam officiis, possimus maiores ullam sapiente dolores consequatur aliquid, dolorem, impedit fuga, magnam quos. Ducimus recusandae dolor totam, incidunt molestias, nemo vitae rerum nam explicabo atque non est hic iusto assumenda debitis, a, esse exercitationem.</p>
+		</div> 
+	</article>
+</div>
+
+</div>
+</body>
+<div class="footer">
+	<p><a>About Dogs & Co.</a> | <a>Contact Us</a></p>
+</div>	
+</html>
