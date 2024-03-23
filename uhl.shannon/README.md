@@ -1,6 +1,7 @@
 # Shannon Uhl
 
 
-- http://shannonuhl.com/wmn608_202190_ol2/uhl.shannon/wmn608/uhl.shanon/styleguide/index.html
+- https://shannonuhl.com/wmn608_202190_ol2/uhl.shanon/wmn608/
+
 
 

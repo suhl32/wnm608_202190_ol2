@@ -175,4 +175,15 @@
 
 		
 	</body>
-	</html>	
+	</html>	[23-Mar-2024 18:16:34 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/zd9tuyohxbqz/public_html/wmn608/uhl.shanon/index.php on line 7
+[23-Mar-2024 18:16:56 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/zd9tuyohxbqz/public_html/wmn608/uhl.shanon/index.php on line 7
+[23-Mar-2024 18:16:57 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/zd9tuyohxbqz/public_html/wmn608/uhl.shanon/index.php on line 7
+[23-Mar-2024 18:16:58 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/zd9tuyohxbqz/public_html/wmn608/uhl.shanon/index.php on line 7
+[23-Mar-2024 18:17:25 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/zd9tuyohxbqz/public_html/wmn608/uhl.shanon/index.php on line 7
+[23-Mar-2024 18:17:26 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/zd9tuyohxbqz/public_html/wmn608/uhl.shanon/index.php on line 7
+[23-Mar-2024 18:17:56 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/zd9tuyohxbqz/public_html/wmn608/uhl.shanon/index.php on line 7
+[23-Mar-2024 18:20:49 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/zd9tuyohxbqz/public_html/wmn608/uhl.shanon/index.php on line 12
+[23-Mar-2024 18:20:50 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/zd9tuyohxbqz/public_html/wmn608/uhl.shanon/index.php on line 12
+[23-Mar-2024 18:23:28 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/zd9tuyohxbqz/public_html/wmn608/uhl.shanon/index.php on line 12
+[23-Mar-2024 18:23:47 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/zd9tuyohxbqz/public_html/wmn608/uhl.shanon/index.php on line 12
+[23-Mar-2024 18:23:48 UTC] PHP Parse error:  syntax error, unexpected 'phpinfo' (T_STRING) in /home/zd9tuyohxbqz/public_html/wmn608/uhl.shanon/index.php on line 12
