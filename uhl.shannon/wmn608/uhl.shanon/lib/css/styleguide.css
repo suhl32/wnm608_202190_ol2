@@ -289,7 +289,6 @@ small:hover {
 .hero {
 	height: 500px;
 	background-position: center;
-	background: darken;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
