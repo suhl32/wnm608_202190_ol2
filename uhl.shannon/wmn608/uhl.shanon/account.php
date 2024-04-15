@@ -14,8 +14,10 @@
 	<div class="container">
 		<div class="card soft">
 			<p>Name:</p>
+			<p>Address</p>
+			<p>Email</p>
+			<p>Phone Number</p>
 			<p>My Purchases</p>
-			<p>Dog Breed Test Results</p>
 		</div>
 	</div>
 

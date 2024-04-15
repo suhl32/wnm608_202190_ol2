@@ -433,11 +433,12 @@ small:hover {
 }
 
 .form-button {
-    background-color: var(--color-offwhite);
+    background-color: var(--color-neutral-light);
     padding: 0.5em 1em;
     border-radius: 0.2em;
     cursor: pointer;
     text-align: center;
+    color: var(--color-neutral-dark);
 }
 
 .form-button:hover {

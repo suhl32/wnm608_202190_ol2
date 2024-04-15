@@ -18,9 +18,12 @@
 		</div>
 	</div>
 
+	<img src="../puppy.jpeg">
+
 			 
 </body>
-
-	<?php include "parts/footer.php"; ?>	
+	<div class="container">
+	<?php include "parts/footer.php"; ?>
+	</div>	
 
 </html>
