@@ -44,6 +44,148 @@
 			<li><a href="dog_breed.php?id=25">Yorkshire Terrier</a></li>
 		
 		</ul>
+
+		<div class="container">
+
+		<div class="grid gap xs-small md-medium">
+			<!-- .col-xs-6.col-md-3*4>.card>{Card} -->	
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/malamute_thumb.jpeg' class="media-image"><p>Alaskan Malamute</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/staffie_thumb.jpeg' class="media-image"><p>Am. Staffordshire Terrier</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/aussie_thumb.jpeg' class="media-image"><p>Australian Shepherd</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3" class="media-image">
+				<div class="card soft">
+					<img src='../img/basset_thumb.jpeg'><p>Basset Hound</p></div>
+					
+				</div>	
+
+
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/beagle_thumb.jpeg' class="media-image"><p>Beagle</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/boston_thumb.jpeg' class="media-image"><p>Boston Terrier</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/bulldog_thumb.jpeg' class="media-image"><p>Bulldog</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3" class="media-image">
+				<div class="card soft">
+					<img src='../img/corso_thumb.jpeg'><p>Cane Corso</p></div>
+					
+				</div>
+
+
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/chi_thumb.jpeg' class="media-image"><p>Chihuahua</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/dal_thumb.jpeg' class="media-image"><p>Dalmation</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/frenchie_thumb.jpeg' class="media-image"><p>French Bulldog</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3" class="media-image">
+				<div class="card soft">
+					<img src='../img/shepard_thumb.jpeg'><p>German Shepherd</p></div>
+					
+			</div>
+					
+
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/golden_thumb.jpeg' class="media-image"><p>Golden Retriever</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/dane_thumb.jpeg' class="media-image"><p>Great Dane</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/lab_thumb.jpeg' class="media-image"><p>Labrador Retriever</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3" class="media-image">
+				<div class="card soft">
+					<img src='../img/mastiff_thumb.jpeg'><p>Neoplolitan Mastiff Mastiff</p></div>
+					
+				</div>
+
+
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/corgie_thumb.jpeg' class="media-image"><p>Pembroke Welsh Corgi</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/pom_thumb.jpeg' class="media-image"><p>Pomeranian</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/pug_thumb.jpeg' class="media-image"><p>Pug</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3" class="media-image">
+				<div class="card soft">
+					<img src='../img/rotty_thumb.jpeg'><p>Rottweiller</p></div>
+					
+				</div>
+
+
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/samoyed_thumb.jpeg' class="media-image"><p>Samoyed</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/husky_thumb.jpeg' class="media-image"><p>Siberian Husky</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src='../img/weim_thumb.jpeg' class="media-image"><p>Weimaraner</p></div>
+					
+			</div>
+			<div class="col-xs-6 col-md-3" class="media-image">
+				<div class="card soft">
+					<img src='../img/xolo_thumb.jpg'><p>Xoloitzcuintli</p></div>
+					
+			</div>
+
+			<div class="card soft">
+					<img src='../img/yorkie_thumb.jpg'><p>Yorkshire Terrier</p></div>
+					
+			</div>
+		</div>
+	</div>
 	</div>
 	</div>
 
