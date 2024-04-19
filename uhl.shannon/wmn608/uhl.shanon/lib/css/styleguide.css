@@ -57,7 +57,6 @@ a {
 
 a:hover {
 	text-decoration: underline;
-	color: var(--color-offwhite);
 }
 
 button {
@@ -98,6 +97,8 @@ small:hover {
 
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
+
+.flex-column { flex-direction:column; }
 
 
 /*Small Classes*/
@@ -252,7 +253,7 @@ small:hover {
 }
 
 	.card.soft {
-			border-radius:0.2em;
+			border-radius:0.5em;
 			box-shadow: 0 0 10px rgba(0,0,0,0.1);
 		}
 
@@ -263,7 +264,7 @@ small:hover {
 
 	.card.dark {
 		background-color:var(--color-main-darkblue);
-		color:var(--color-main-lightblue);
+		color:var(--color-offwhite);
 	}
 
 	.card.light {
@@ -273,6 +274,13 @@ small:hover {
 
 	.card.flat {
 		padding:0;
+	}
+
+	.card-section {
+		padding: 1em;
+	}
+	.card-section~.card-section {
+		border-top: 1px solid var(--color-neutral-light);
 	}
 
 
