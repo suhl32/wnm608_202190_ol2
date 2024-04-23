@@ -1,11 +1,10 @@
 <?php 
 
-		error_reporting(E_ALL);
-		ini_set('display_errors', 1);
-
 		include_once "lib/php/functions.php";
 
 $product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=" .$_GET['id'])[0];
+
+$cart_product = cartItemById($_GET['id']);
 
 
 ?><!DOCTYPE html>
@@ -24,7 +23,10 @@ $product = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id`=" .$_GET['
 
 	<div class="container">
 		<div class="card soft">
-			<p>You added a <?= $product->breed ?> to your cart</p>
+			<h2>You added a <?= $product->breed ?> to your cart</h2>
+			<p>There are now <?= $cart_product->amount ?> of <?= $product->breed ?> in your cart.</p>
+
+
 			<div class="display-flex">
 				<div class="flex-none"><a href="product_list.php">Continue Shopping</a></div>
 				<div class="flex-stretch"></div>

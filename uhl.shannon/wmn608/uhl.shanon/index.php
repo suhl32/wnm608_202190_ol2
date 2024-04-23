@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php 
+
+		include_once "lib/php/functions.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -13,7 +17,7 @@
 	<?php include "parts/navbar.php"; ?>
 
 	<div class="container">
-	<div class="hero" style="background-image: url('../img/hero.jpg')">
+	<div class="hero" style="background-image: url('wmn608/uhl.shanon/img/hero.jpg')">
 			<div class="hero-text">
 				<h1>Meet our Featured Breed</h1>
 				<button>Click Here</button>

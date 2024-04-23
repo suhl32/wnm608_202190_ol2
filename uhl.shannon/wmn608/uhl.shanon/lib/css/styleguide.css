@@ -64,12 +64,12 @@ button {
 }
 
 button:hover {
-	background-color: var(--color-accent-lightred);
-	color: var(--color-neutral-dark);
+	background-color: var(--color-main-lightblue);
+	color: var(--color-accent-darkred);
 }
 
 small:hover {
-	color: var(--color-accent-lightred);
+	color: var(--color-main-lightblue);
 }
 
 /* LAYOUT CLASSES */
@@ -128,7 +128,7 @@ small:hover {
 	}
 
 	.nav a:hover {
-		background-color: var(--color-accent-lightred);
+		background-color: var(--color-accent-darkred);
 		color: var(--color-offwhite);
 		text-decoration:none;
 	}
@@ -449,8 +449,11 @@ small:hover {
     color: var(--color-neutral-dark);
 }
 
+.form-button.inline {
+	width: initial;
+}
+
 .form-button:hover {
-	background-color: var(--color-accent-lightred);
 	text-decoration: none;
 }
 .form-button:active {
