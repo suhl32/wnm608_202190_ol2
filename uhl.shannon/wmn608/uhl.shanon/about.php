@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php 
+
+		include_once "lib/php/functions.php";
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -18,7 +22,18 @@
 		</div>
 	</div>
 
-	<img src="../puppy.jpeg">
+	<div class="container">
+		<div class="card soft">
+	<div class="grid gap xs-small md-medium">
+			<!-- .col-xs-6.col-md-3*4>.card>{Card} -->	
+			<div class="col-lg-6 col-lg-4">
+				<div class="card soft">
+					<img src='/../hero.jpg' class="media-image"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
 
 			 
 </body>

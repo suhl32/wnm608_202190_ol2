@@ -6,7 +6,7 @@ function productListTemplate($r,$o) {
 	<a class="col-xs-12 col-md-4" href="product_item.php?id=$o->id">
 				<figure class="figure product display-flex flex-column">
 				<div class="flex-stretch">
-				<img src="img/$o->thumbnail" alt="">
+				<img src="/../$o->thumbnail" alt="">
 				</div>
 				<figcaption class="flex-none">
 					<div>&dollar;$o->price</div>
@@ -32,7 +32,7 @@ $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex card-section">
 	<div class="flex-none images-thumbs">
-	<img src="/img/$0->thumbnail">
+	<img src="/../$0->thumbnail">
 	</div>
 	<div class="flex-stretch">
 		<strong>$o->breed</strong>
