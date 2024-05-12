@@ -1,6 +1,7 @@
 <?php 
 
 		include_once "lib/php/functions.php";
+		include_once "parts/templates.php";
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -9,22 +10,20 @@
 	<title>Dog & Co.</title>	
 
 	<?php include "parts/meta.php"; ?>
-
 </head>
 <body>
 
 <header>
 	<?php include "parts/navbar.php"; ?>
 
-	<div class="container">
-	<div class="hero" style="background-image: url('/../img/hero.jpg')">
-			<div class="hero-text">
-				<h1>Meet our Featured Breed</h1>
-				<button>Click Here</button>
+	<div class="view-window" style="background-image: url('/../img/hero.jpg')">
+			<div class="fill-parent display-flex flex-align-center flex-justify-center">
+				<div class="card soft">
+				Products!
 			</div>
 		</div>	
 	</div>
-</header>
+
 	<div class='container'>
 		<div class="card soft">
 					<div class="form-control">
@@ -33,28 +32,21 @@
 						</form>
 					</div>
 		</div>
+	</div>
 		<div class="container">
-
-		<div class="grid gap xs-small md-medium">
-			<!-- .col-xs-6.col-md-3*4>.card>{Card} -->	
-			<div class="col-xs-6 col-md-3">
-				<div class="card soft">
-					<img src='/../img/basset_thumb.jpeg' class="media-image"></div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="card soft">
-					<img src='/../img/pom_thumb.jpeg' class="media-image"></div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="card soft">
-					<img src='/../img/corso_thumb.jpeg' class="media-image"></div>
-			</div>
-			<div class="col-xs-6 col-md-3" class="media-image">
-				<div class="card soft">
-					<img src='/../img/dane_thumb.jpeg'></div>
+			<div class="card soft">
+				<h2>Information</h2>
+				<p>You'll love these products!</p>
 			</div>
 		</div>
-	</div>
+
+	<div class="container">
+		<h2>Latest Working Breeds</h2>
+		<?php recommendedCategory("working"); ?>
+		<h2>Latest Toy Breeds</h2>
+		<?php recommendedCategory("toy"); ?>
+	</div>	
+
 
 			 
 </body>

@@ -32,7 +32,7 @@ $selectamount = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex card-section">
 	<div class="flex-none images-thumbs">
-	<img src="/../$0->thumbnail">
+	<img src="/../$o->thumbnail">
 	</div>
 	<div class="flex-stretch">
 		<strong>$o->breed</strong>
@@ -66,15 +66,15 @@ function cartTotals() {
 
 return <<<HTML
 <div class="card-section display-flex">
-	<div class="flex-stretch"><strong>Sub Total</div>
+	<div class="flex-stretch"><strong>Sub Total</strong></div>
 	<div class="flex-none">&dollar;$pricefixed</div>
 </div>
 <div class="card-section display-flex">
-	<div class="flex-stretch"><strong>Taxes</div>
+	<div class="flex-stretch"><strong>Taxes</strong></div>
 	<div class="flex-none">&dollar;$taxfixed</div>
 </div>
 <div class="card-section display-flex">
-	<div class="flex-stretch"><strong>Total</div>
+	<div class="flex-stretch"><strong>Total</strong></div>
 	<div class="flex-none">&dollar;$taxedfixed</div>
 </div>
 <div class="card-section">
@@ -82,6 +82,24 @@ return <<<HTML
 </div>
 HTML;
 }
+
+function recommendedProducts($a) {
+	$products = array_reduce($a,'productListTemplate');
+	echo <<<HTML
+<div class="grid gap productlist">$products</div> 
+HTML;
+}
+
+function recommendedCategory($cat,$limit=3) {
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' ORDER BY `date_create` DESC LIMIT $limit");
+	recommendedProducts($result);
+}
+
+function recommendedSimilar($cat,$id=0,$limit=3) {
+	$result = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `category`='$cat' AND `id`<>$id ORDER BY rand() LIMIT $limit");
+	recommendedProducts($result);
+}
+
 
 
 
