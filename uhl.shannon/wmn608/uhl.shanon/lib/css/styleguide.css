@@ -286,16 +286,16 @@ small:hover {
 
 
 .view-window {
-	height:50vh;
+	height:150vh;
 	position:relative;
 	overflow:hidden;
-	background-size:cover;
-	background-position:center;
+	background-size:contain;
+	background-position:top;
 	background-attachment:fixed;
 }
 
 .hero {
-	height: 500px;
+	height: 700px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
