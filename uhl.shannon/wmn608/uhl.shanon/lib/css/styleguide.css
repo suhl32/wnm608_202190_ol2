@@ -87,18 +87,27 @@ small:hover {
 	margin-left: auto;
 }
 
-.display-flex { display:flex; }
+.display-flex { 
+	display:flex;
+	flex-wrap: wrap;
+	 }
+
 .display-inline-flex { display:inline-flex; }
 .display-block { display:block; }
 .display-inline-block { display:inline-block; }
 
 .flex-stretch { flex: 1 1 auto; }
-.flex-none { flex: none; }
+
+.flex-none { 
+	flex: none;
+	margin-left: 5px; 
+}
 
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
 
 .flex-column { flex-direction:column; }
+.flex-wrap { flex-wrap:wrap; }
 
 
 /*Small Classes*/
@@ -214,6 +223,7 @@ small:hover {
 	background-color: var(--color-main-darkblue);
 	color: var(--color-lightyellow);
 	line-height:var(--header-height);
+	margin-bottom:1em;
 
 }
 
@@ -224,6 +234,10 @@ small:hover {
 	}
 	.navbar a {
 		padding:0 0.5em;
+	}
+
+	.flush>.navbar {
+		margin-bottm:0;
 	}
 
 .footer {
@@ -243,12 +257,11 @@ small:hover {
 /* CARD */
 
 .card {
-	background-color:var(--color-white);
+	background-color:var(--color-offwhite);
 	margin-top:1em;
 	margin-bottom:1em;
 	padding:1em;
-
-	overflow:hiddden;
+	overflow:hidden;
 	position:relative;
 }
 
@@ -276,6 +289,11 @@ small:hover {
 		padding:0;
 	}
 
+	[class*='col-']>.card {
+		height: 100%;
+		margin: 0;
+	}
+
 	.card-section {
 		padding: 1em;
 	}
@@ -286,12 +304,13 @@ small:hover {
 
 
 .view-window {
-	height:150vh;
+	height:100vh;
 	position:relative;
 	overflow:hidden;
-	background-size:contain;
+	background-size:cover;
 	background-position:top;
 	background-attachment:fixed;
+	background-repeat: no-repeat;
 }
 
 .hero {
@@ -405,7 +424,11 @@ small:hover {
 /* Forms */
 
 .form-control {
-	margin: 1em 0;
+    margin: 1em 0;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .form-select>select,
@@ -442,11 +465,12 @@ small:hover {
 
 .form-button {
     background-color: var(--color-neutral-light);
-    padding: 0.5em 1em;
+    padding: 0.5em 1em; 
     border-radius: 0.2em;
     cursor: pointer;
     text-align: center;
     color: var(--color-neutral-dark);
+    margin: 0.5em 0; 
 }
 
 .form-button.inline {

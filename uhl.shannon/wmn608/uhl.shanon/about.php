@@ -18,18 +18,14 @@
 
 	<div class="container">
 		<div class="card soft">
-			<p>Dogs&Co. is more than just a pet store, it is a place where families can purchase their next puppy in a safe online community. Dogs&Co. connects reputable breeders with families to find thier next family member. We offer education on each breed listed, as well as educational articles about dog care to prpare you for your new puppy. Dogs&Co. can even find the best puppy fit for your lifestyle by taking our interactive Dog Breed Test. </p>
+			<p>At Dogs&Co., our mission is to promote responsible dog ownership and facilitate meaningful connections between quality breeders and loving owners. Whether you're searching for a loyal companion, a dedicated working partner, or a beloved family pet, Dogs&Co. is here to help you find your perfect match.</p>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="card soft">
-	<div class="grid gap xs-small md-medium">
-			<!-- .col-xs-6.col-md-3*4>.card>{Card} -->	
-			<div class="col-lg-6 col-lg-4">
-				<div class="card soft">
-					<img src='/../hero.jpg' class="media-image"></div>
-			</div>
+			<img src='/../hero.jpg' class="media-image"></div>
+		</div>
 		</div>
 	</div>
 </div>

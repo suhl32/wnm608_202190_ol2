@@ -10,9 +10,9 @@ $empty_product = (object)[
 	"price"=>"8000",
 	"category"=>"Sporting",
 	"size"=>"large",
-	"description"=>"A ridiculous designer breed that is really just a mutt that people pay way too much money for",
-	"thumbnail"=>"labradoodle_thumb.jpeg",
-	"images"=>"labradoodle_1.jpeg,labradoodle_adult.jpeg",
+	"description"=>"A ridiculous designer breed that is really just a mutt, which people pay way too much money for",
+	"thumbnail"=>"doodle_thumb.jpg",
+	"images"=>"doodle_1.jpg,doodle_adult.jpg",
 	"quantity"=>"2"
 ];
 
