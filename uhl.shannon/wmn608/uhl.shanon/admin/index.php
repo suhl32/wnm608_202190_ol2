@@ -88,27 +88,26 @@ if (isset($_GET['action'])) {
 
 // TEMPLATES
 function productListItem($r,$o) {
-return $r.<<<HTML
+    return $r.<<<HTML
 <div class="card soft">
-<div class="display-flex">
-	<div class="flex-none images-thumbs"><img src='/../$o->thumbnail'></div>
-	<div class="flex-stretch" style="padding:1em">$o->breed</div>
-	<div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a></div>
-	</div>
+    <div class="display-flex">
+        <div class="flex-none images-thumbs"><img src="/$o->thumbnail"></div>
+        <div class="flex-stretch" style="padding:1em">$o->breed</div>
+        <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$o->id" class="form-button">Edit</a></div>
+    </div>
 </div>
 HTML;
 }
 
-
 function showProductPage($o) {
-
     $id = $_GET['id'];
     $addoredit = $id == "new" ? "Add" : "Edit";
     $createorupdate = $id == "new" ? "create" : "update";
-    $images = array_reduce(explode(",", $o->images),function($r,$o){return $r."<img src='/../$o'>";});
+    $images = array_reduce(explode(",", $o->images), function($r, $o) {
+        return $r."<img src='/$o'>";
+    });
 
-    // heredoc 
-
+    // Display section
     $display = <<<HTML
     <div>
         <h2>$o->breed</h2>
@@ -134,32 +133,32 @@ function showProductPage($o) {
         </div>
         <div class="form-control">
             <label class="form-label">Thumbnail</label>
-            <span class="images-thumbs"><img src='/../$o->thumbnail'></span>
+            <span class="images-thumbs"><img src="/$o->thumbnail"></span>
         </div>
         <div class="form-control">
             <label class="form-label">Other Images</label>
             <span class="images-thumbs">$images</span>
         </div>
     </div>
-    HTML;
+HTML;
 
+    // Form section
     $form = <<<HTML
     <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$createorupdate">
         <h2>$addoredit Product</h2>
         
-            <input type="hidden" name="action" value="$createorupdate">
-
+        <input type="hidden" name="action" value="$createorupdate">
         <div class="form-control">
             <label class="form-label" for="product-breed">Breed</label>
             <input class="form-input" name="product-breed" id="product-breed" type="text" value="$o->breed" placeholder="Enter the Product Breed">
         </div>
         <div class="form-control">
             <label class="form-label" for="product-price">Price</label>
-            <input class="form-input" name="product-price" id="product-price" type="Number" min="0" max="8000" step="100" value="$o->price" placeholder="Enter the Product Price">
+            <input class="form-input" name="product-price" id="product-price" type="number" min="0" max="8000" step="100" value="$o->price" placeholder="Enter the Product Price">
         </div>
         <div class="form-control">
             <label class="form-label" for="product-quantity">Quantity</label>
-            <input class="form-input" name="product-quantity" id="product-quantity" type="Number" min="0" max="8000" step="1" value="$o->quantity" placeholder="Enter the Product Quantity">
+            <input class="form-input" name="product-quantity" id="product-quantity" type="number" min="0" max="8000" step="1" value="$o->quantity" placeholder="Enter the Product Quantity">
         </div>
         <div class="form-control">
             <label class="form-label" for="product-category">Category</label>
@@ -167,7 +166,7 @@ function showProductPage($o) {
         </div>
         <div class="form-control">
             <label class="form-label" for="product-size">Size</label>
-            <input class="form-input" name="product-size"  id="product-size"type="text" value="$o->size" placeholder="Enter the Product Size">
+            <input class="form-input" name="product-size" id="product-size" type="text" value="$o->size" placeholder="Enter the Product Size">
         </div>
         <div class="form-control">
             <label class="form-label" for="product-description">Description</label>
@@ -185,35 +184,26 @@ function showProductPage($o) {
             <input class="form-button" type="submit" value="Save Changes">
         </div>
     </form>
-    HTML;
+HTML;
 
     $output = $id == "new" ? "<div class='card soft'>$form</div>" :
-    "<div class= 'grid gap'>
+    "<div class='grid gap'>
         <div class='col-xs-12 col-md-7'><div class='card soft'>$display</div></div>
         <div class='col-xs-12 col-md-5'><div class='card soft'>$form</div></div>
-    </div>
-    ";
+    </div>";
 
     $delete = $id == "new" ? "" : "<a href='{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a>";
 
     echo <<<HTML
     <div class="card soft">
-    <nav class="display-flex">
+        <nav class="display-flex">
             <div class="flex-stretch"><a href="{$_SERVER['PHP_SELF']}">Back</a></div>
             <div class="flex-none">$delete</div>
-    </nav>
+        </nav>
     </div>
     $output
-    HTML;
+HTML;
 }
-
-
-
-
-
-
-
-
 
 ?>
 <!DOCTYPE html>
